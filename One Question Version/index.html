@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <title>Tek Soru Quiz</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="card">
+    <h1>Tek Soru Quiz</h1>
+
+    <div class="controls">
+      <label>
+        Kategori
+        <select id="category">
+          <option value="">Rastgele</option>
+          <option value="18">Bilgisayar Bilimleri</option>
+          <option value="21">Spor</option>
+          <option value="17">Bilim & Doğa</option>
+          <option value="11">Eğlence: Filmler</option>
+        </select>
+      </label>
+
+      <label>
+        Zorluk
+        <select id="difficulty">
+          <option value="">Karışık</option>
+          <option value="easy">Kolay</option>
+          <option value="medium">Orta</option>
+          <option value="hard">Zor</option>
+        </select>
+      </label>
+
+      <button id="reload">Soru Getir</button>
+    </div>
+
+    <div id="meta" class="meta"></div>
+    <div id="question" class="question">test</div>
+    <div id="answers" class="answers"></div>
+    <div id="error" class="error"></div>
+  </div>
+
+<script src="index.js"></script>
+</body>
+</html>

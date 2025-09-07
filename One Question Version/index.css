@@ -1,0 +1,15 @@
+:root { font-family: system-ui, sans-serif; }
+body { margin:0; background:#0f172a; color:#e2e8f0; display:grid; place-items:center; min-height:100vh; }
+.card { width:min(760px, 92vw); background:#111827; border:1px solid #1f2937; border-radius:16px; padding:24px; box-shadow:0 10px 30px rgba(0,0,0,.25); }
+h1 { margin:0 0 16px; }
+.controls { display:flex; gap:12px; flex-wrap:wrap; align-items:end; margin-bottom:12px; }
+label { display:flex; flex-direction:column; gap:6px; font-size:14px; }
+select, button { padding:10px 14px; border-radius:10px; border:1px solid #334155; background:#0b1220; color:#e2e8f0; cursor:pointer; }
+button[disabled]{ opacity:.6; cursor:not-allowed; }
+.meta { opacity:.8; margin-top:4px; margin-bottom:8px; font-size:14px; min-height:1em; }
+.question { font-size:18px; margin:12px 0 16px; min-height:2.2em; }
+.answers { display:grid; gap:10px; }
+.answer { text-align:left; padding:12px; border-radius:10px; border:1px solid #334155; background:#0b1220; cursor:pointer; }
+.answer.correct { border-color:#059669; background:#064e3b; }
+.answer.wrong   { border-color:#b91c1c; background:#450a0a; }
+.error { color:#f87171; margin-top:12px; min-height:1em; }
